@@ -1,0 +1,36 @@
+<style type="text/css">
+	.btn {
+		width: 100%;
+		padding-bottom: 100%;
+		position: relative;
+	}
+
+	.btn > div {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 50%;
+		border: 1px solid #4c4949;
+		background: -webkit-radial-gradient(center, ellipse cover,  #5c5c6b 0%,#74759b 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  #5c5c6b 0%,#74759b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+
+	.btn > div:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 8%;
+		right: 8%;
+		bottom: 8%;
+		left: 8%;
+		border-radius: 50%;
+		background: -webkit-radial-gradient(center, ellipse cover,  #7a7a7a 0%,#111111 55%,#0a0a0a 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  #7a7a7a 0%,#111111 55%,#0a0a0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	}
+</style>
+
+<div class="btn">
+	<div></div>
+</div>

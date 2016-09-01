@@ -1,0 +1,155 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/about/about";
+
+@import "../pages/contact/contact";
+
+@import "../pages/home/home";
+
+.game {
+	display: flex;
+	height: 100%;
+
+	.left-menu {
+		width: 25%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+    	align-items: stretch;
+
+		.logo {
+			display: block;
+			width: 40%;
+			padding-bottom: 40%;
+			position: relative;
+			margin: 20% auto 0;
+
+			> div {
+				display: flex;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				border-radius: 50%;
+				border: 1px solid #000;
+				line-height: 1;
+
+				&:before {
+					content: '';
+					display: block;
+					width: 30%;
+					height: 30%;
+					position: absolute;
+					top: 35%;
+					left: -15%;
+					border-radius: 50%;
+					background: #fff;
+				}
+
+				&:after {
+					content: '';
+					display: block;
+					width: 16%;
+					height: 16%;
+					position: absolute;
+					top: 42%;
+					left: -8%;
+					border-radius: 50%;
+					background: #000;
+				}
+
+				.text {
+					margin: auto;
+					font-size: 35px;
+    				font-family: monospace;
+				}
+			}
+		}
+
+		.buttons {
+			width: 60%;
+			margin: 0 30% 10% 10%;
+
+			.btn {
+				display: flex;
+				position: relative;
+				width: 100%;
+				margin: 10% 0
+			}
+
+			.top-left,
+			.bottom-left {
+				width: 50%
+			}
+
+			.left-arrow {
+				width: 40%;
+				margin-right: 10%;
+				position: relative;
+
+				> div {
+					display: block;
+					width: 100%;
+					padding-bottom: 60%;
+					position: relative;
+
+					> span {
+						display: block;
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background: -webkit-linear-gradient(45deg,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(45deg,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+						&:after,
+						&:before {
+							content: '';
+							display: block;
+							width: 120%;
+							height: 48%;
+							position: absolute;
+							background: #fff;
+							left: -10%;
+						}
+
+						&:after {
+							transform: rotate(-15.7deg);
+							top: -25%;
+						}
+
+						&:before {
+							transform: rotate(15.7deg);
+							bottom: -25%;	
+						}
+					}
+				}
+			}
+
+			.top-left-arrow {
+				transform: rotate(30deg) translate(-10%, -15%);
+			}
+
+			.bottom-left-arrow {
+				transform: rotate(-30deg) translate(-10%, 80%);
+			}
+		}
+	}
+
+	.game-screen {
+		width: 50%;
+		position: relative;
+	}
+
+	.right-menu {
+		width: 25%
+	}
+}
+
